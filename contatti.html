@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sabrina Di Fina - Contact Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico:wght@700&family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets\portfolio.css">
 
+<link rel="icon" type="image/x-icon" href="assets\favicon.ico">
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Contattami - Il mio portfolio - Di Fina Sabrina"/>
+<meta property="og:url" content="https://sabrinadifina.github.io/Contatti.html"/>
+<meta property="og:image" content="assets\foto profilo.png"/>
+<meta property="og:description" content="Inviami un messaggio attraverso il form!"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="assets\portfolio.js"></script>
+</head>
+<body>
+    <div class="menu">
+        <div class="nome">
+            <h1><a id="nomeA" href="index.html"><img class="nomeImage"  src="assets\mionome.png" alt="Contatti - Il portfolio di Sabrina Di Fina"></a></h1>
+        </div>
+        <div class="selezione">
+            <div class="sudimeButton"><a href="index.html#aboutmeLink">Su di me</a></div>
+            <div class="formazioneButton"><a href="index.html#formazioneLink">Formazione</a></div>
+            <div class="esperienzeButton"><a href="index.html#esperienzeLink">Esperienze</a></div>
+            <div class="contattiButton"><a href="Contatti.html">Contatti</a></div>
+            <div class="galleryButton"><a href="index.html#galleryLink">Gallery</a></div>
+        </div>
+    </div>
+    <div class="dropdownMenu">
+        <div class="dropdownNome">
+            <a href="index.html"><img class="nomeImage"  src="assets\mionome.png" alt="Nome Sabrina Di Fina"></a>
+        </div>
+        <img class="dropdownButton" onclick="myFunction()" src="assets\menu.png" alt="Bottone del menu">
+        
+    </div>
+    <div id="verticalmenu" class="verticalMenu">  
+            <ul>
+                <li class="sudimeDropmenu"><a href="index.html#aboutmeLink">Su di me</a></li>
+                <li class="formazioneDropmenu"><a href="index.html#formazioneLink">Formazione</a></li>
+                <li class="esperienzeDropmenu"><a href="index.html#esperienzeLink">Esperienze</a></li>
+                <li class="contattiDropmenu"><a href="Contatti.html">Contatti</a></li>
+                <li class="galleryDropmenu"><a href="index.html#galleryLink">Gallery</a></li>
+            </ul>
+    </div> 
+<div class="bodyForm">
+    <div class="form" id="formid">
+        <div class="formTitle">Contattami compilando il form</div>
+        <form id="contactform">
+            <input class="formelement"  type="hidden" name="contact_number">
+            <label class="formelement" for="namespace" title="Nome utente">Name</label>
+            <input required class="formelement" id="namespace" type="text" name="user_name">
+            <label class="formelement" for="emailspace" title="Email utente">Email</label>
+            <input required class="formelement" id="emailspace" type="email" name="user_email">
+            <label class="formelement" for="messagespace" title="Messaggio">Message</label>
+            <textarea required class="formelement" id="messagespace" name="message"></textarea>
+            <input class="formelement" id="sendbutton" type="submit" value="Send" onclick="myFunction()">
+        </form>
+    </div>
+    <div id="grazie">
+        Grazie!
+    </div>
+    <div class="linkhomelinkedin" id="linkhomelinkedin">
+        <a class="gobacklink" href="index.html"><img id="linkhome" src="assets\home_logo-removebg-preview.png" alt="link alla homepage"></a>
+        <a class="gobacklink" href="https://www.linkedin.com/in/sofia-iotti-8052ab213/"><img id="liklinkedin" src="assets\linkedin.png" alt="link al profilo Linkedin di Sabrina Di Fina"></a>
+        <a class="gobacklink" href="https://github.com/SabrinaDiFina"><img id="github" src="assets\github.png" alt="link al profilo Github di Sabrina Di Fina"></a>
+    </div>
+</div>    
+</body>
+</html>
