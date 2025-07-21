@@ -1,0 +1,385 @@
+*{
+    background-color: #fff9f0;
+    color: #2f2f2f;
+    font-family: 'Pacifico', regular;
+    box-sizing: border-box !important;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 10vh;
+    display:flex;
+    background-color: #da9eff;
+    border-radius: 0 0 30px 30px;
+    z-index: 3;
+}
+.nome{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #da9eff;
+    border-radius: 0 0 0 30px;
+    
+}
+.nomeImage{
+    width: 100%;
+    max-width: 200px;
+    background-color: #da9eff;
+}
+.selezione{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #da9eff;
+    border-radius: 0 0 30px 0;
+}
+
+.sudimeButton, .formazioneButton,.esperienzeButton, .contattiButton, .galleryButton{
+    border-radius: 30px;
+    padding: 5px 10px ;
+    background-color: #2f2f2f;
+    font-size:large;
+    box-shadow: 0px 0px 80px white;
+}
+.sudimeButton> a:hover, .formazioneButton> a:hover,.esperienzeButton> a:hover, .contattiButton> a:hover, .galleryButton> a:hover{
+    color: #9687f5
+}
+.selezione a{
+    background-color: #2f2f2f;
+    text-decoration: none; 
+    color: white;}
+.nome> a{
+    display: flex;
+    justify-content: center;
+    background-color:#da9eff;
+}
+.homeContainer{
+    width: 100%;
+    height: 90vh;
+    margin-top: 10vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    align-items: center;
+    z-index:0;
+}
+
+.myImageContainer{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+}
+#myImage{
+    width:100%;
+    max-width: 500px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 200px white;
+}
+.welcomeImgContainer{
+    text-align: center;
+    width: 50%;
+}
+
+.welcomeImg{
+    width: 90%;
+    max-width: 500px;
+}
+
+
+@media screen and (max-width: 1067px) {
+    .welcomeImgContainer{
+        width:90%;
+    }
+    .myImageContainer{
+        width:90%;
+    }
+    .welcomeImg{
+        max-width: 300px;
+    }
+    #myImage{
+        max-width: 400px;
+    }
+    .menu{
+        display: none;
+    }
+    p{
+        display: block;
+    }
+    .sectionAboutme, .sectionEsperienze. .sectionFormazione, .sectionGallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .aboutmeTitle, .amtext, .formazioneTitle, .ftext, .esperienzeTitle, .etext{
+        width: 80vw;
+    }
+    .galleryTitle{
+        width:60vw;
+    }
+    .galleryText, .galleryText> img{
+        width: 70vw;
+    }
+    .gobacklink> img{
+        width: 8vw;
+    }
+    
+}
+@media screen and (min-width:1067px){
+    .dropdownMenu, .dropdownNome, .dropdownButton, .verticalMenu{
+        display: none;
+    }
+    .sectionAboutme, .sectionEsperienze. .sectionFormazione, .sectionGallery{
+        display: flex;
+        justify-content: center;
+    }
+    .aboutmeTitle, .amtext, .galleryTitle, .galleryText> img{
+        width: 19vw;
+    }
+    .formazioneTitle, .ftext, .esperienzeTitle, .etext{
+        width: 28vw;
+    }
+    .gobacklink> img{
+    background-color: #fff9f0;
+    width: 6vw;
+    }
+}
+.rotate{
+    rotate: 180deg;
+}
+.sectionAboutme,.aboutmeTitle> img, .aboutmeTitle, .aboutmeText, .sectionEsperienze, .esperienzeTitle> img,.esperienzeTitle, .esperienzeText{
+    background-color:#da9eff;
+    display: flex;
+    justify-content: center;
+}
+.aboutmeText, .formazioneText, .esperienzeText/*, .galleryText*/{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+svg{
+    z-index: 0;
+    display:block;
+    vertical-align:top;
+    overflow:hidden;
+}
+.dropdownMenu{
+    background-color:#da9eff;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 2% 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 10vh;
+    border-radius: 0 0 30px 30px;
+    z-index: 2;
+}
+.dropdownNome{
+    background-color:#da9eff;
+    width: 40%;
+}
+.dropdownNome> a{
+    background-color:#da9eff;
+}
+.dropdownButton{
+    background-color:#da9eff;
+    height: 100%;
+    position:relative;
+    right: 0vw;
+}
+.verticalMenu{
+    background-color:#da9eff;
+    list-style:none;
+    display: none;
+    justify-content: center;
+    position:fixed;
+    width: 90vw;
+    top:13vh;
+    right:5vw;
+    z-index:1;    
+    border-radius: 30px;
+    border: solid 2px #2f2f2f;
+}
+ul{
+    background-color:#da9eff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    font-size: large;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+ul> li{
+    background-color:#da9eff;
+    padding: 1vh;
+}
+li> a{
+    background-color:#da9eff;
+}
+.amtext, .etext{
+    background-color:#da9eff;
+    margin:50px;
+    text-align: center;
+}
+.amtext> p, .etext> p{
+    background-color:#da9eff;
+}
+.amtextTitle, .etextTitle {
+    background-color: #da9eff;
+    font-weight: bolder;
+    font-size:x-large;
+    text-shadow: 2px 2px 2px #9687f5;
+}
+
+.sectionAboutme, .sectionFormazione, .sectionEsperienze, .sectionGallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.ftext{
+    margin:50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+.ftextTitle{
+    font-weight: bolder;
+    font-size:x-large;
+    text-shadow: 2px 2px 2px #da9eff;
+}
+#spanfText{
+    font-size:x-large;
+}
+.aboutmeTitle> img, .formazioneTitle> img, .esperienzeTitle> img, .galleryTitle> img {
+    width: 100%;
+}
+.galleryText{
+    width:65vw;
+}
+.galleryText> img{
+    padding: 10px;
+}
+.bodyForm{
+    height: 88vh;
+    width: 100vw;
+    margin-top: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.formTitle{
+    background-color: #da9eff;
+    font-size: x-large;
+    text-shadow: 0 0 15px #9687f5;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width:90vw;
+    height: 80vh;
+    padding: 50px;
+    background-color: #da9eff;
+    box-shadow: 2px 2px 2px #9687f5;
+    font-size: large;
+    border-radius: 30px;
+}
+#namespace, #emailspace, #messagespace{
+    background-color: #fff9f0;
+    box-shadow: 0 0 15px #da9eff;
+    border-radius: 20px;
+    text-align: center;
+}
+#namespace, #emailspace{
+    height: 5vh;
+}
+#messagespace{
+    height: 15vh;
+}
+#contactform{
+    background-color: #da9eff;
+}
+.formelement{
+    background-color: #da9eff;
+    border: none;
+    width:100%;
+}
+#sendbutton{
+    width: 12vw;
+    height: 6vh;
+    border: solid #2f2f2f;
+    background-color: #fff9f0;
+    box-shadow: 0 0 15px #9687f5;
+    margin-top: 50px;
+    font-size: medium;
+    border-radius: 20px;
+}
+#sendbutton:hover{
+    background-color: #9687f5;
+}
+.goback{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+}
+#grazie{
+    display:none;
+    text-align: center;
+    margin: 30vh;
+    text-shadow: 0 0 15px #da9eff; 
+    font-size: 4vw;
+}
+#gobackbutton{
+    display: none;
+    text-align: center;
+    margin: 30vh;
+}
+.gobackhome{
+    background-color: #da9eff;
+}
+.gobackhome> a {
+    font-size:small;
+    background-color: #da9eff;
+    text-shadow: 0 0 15px #fff9f0;
+}
+.linkhomelinkedin{
+    background-color: #fff9f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gobacklink{
+    background-color: #fff9f0;  
+    padding: 20px; 
+    
+}
+#nomeA{
+    background-color:#da9eff;
+}
