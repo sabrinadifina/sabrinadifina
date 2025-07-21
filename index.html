@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sabrina Di Fina - Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico:wght@700&family=Quicksand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets\portfolio.css">
+<script type="text/JavaScript" src="assets\portfolio.js"></script>
+<link rel="icon" type="image/x-icon" href="assets\favicon.ico">
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Scopri il mio portfolio - Di Fina Sabrina"/>
+<meta property="og:url" content="https://github.com/sabrinadifina"/>
+<meta property="og:image" content="assets\foto profilo.png"/>
+<meta property="og:description" content="Leggi la mia presentazione e scopri di più sulle mie esperienze!"/>
+</head>
+
+<body>
+
+    <div class="menu">
+        <div class="nome">
+            <a href="index.html"><img class="nomeImage"  src="assets\mionome.png" alt="Nome Sabrina Di Fina"></a>
+        </div>
+        <div class="selezione">
+            <div class="sudimeButton"><a href="#aboutmeLink">Su di me</a></div>
+            <div class="formazioneButton"><a href="#formazioneLink">Formazione</a></div>
+            <div class="esperienzeButton"><a href="#esperienzeLink">Esperienze</a></div>
+            <div class="contattiButton"><a href="Contatti.html">Contatti</a></div>
+            <div class="galleryButton"><a href="#galleryLink">Gallery</a></div>
+        </div>
+    </div>
+    <div class="dropdownMenu">
+        <div class="dropdownNome">
+            <a href="index.html"><img class="nomeImage"  src="assets\mionome.png" alt="Nome Sabrina Di Fina"></a>
+        </div>
+        <img class="dropdownButton" onclick="myFunction()" src="assets\menu.png" alt="Bottone del menu">
+        
+    </div>
+    <div id="verticalmenu" class="verticalMenu">  
+            <ul>
+                <li class="sudimeDropmenu"><a href="#aboutmeLink">Su di me</a></li>
+                <li class="formazioneDropmenu"><a href="#formazioneLink">Formazione</a></li>
+                <li class="esperienzeDropmenu"><a href="#esperienzeLink">Esperienze</a></li>
+                <li class="contattiDropmenu"><a href="Contatti.html">Contatti</a></li>
+                <li class="galleryDropmenu"><a href="#galleryLink">Gallery</a></li>
+            </ul>
+    </div>
+<div class="homeContainer">
+    <div class="welcomeImgContainer">
+        <h1><img class="welcomeImg" src="assets\welcome.png" alt="Benvenuto nel portfolio di Sabrina Di Fina"></h1>
+    </div>
+    <div class="myImageContainer">
+        <img id="myImage" src="assets\foto profilo.png" alt="Immagine profilo di Sabrina Di Fina">
+    </div>
+</div>
+
+<div class="sezioni">
+    <svg id="aboutmeLink"class="rotate" viewBox="0 0 500 70">
+        <path d="M 0 30 C 150 100 280 0 500 40 L 500 0 L 0 0" fill="#bcdae0"></path>
+    </svg>
+<div  class="sectionAboutme">
+    <div class="aboutmeTitle">
+        <img src="assets\sudime.png" alt="Sezione informazioni su Sabrina Di Fina">
+    </div>
+    <div class="aboutmeText">
+        <div class="amtext"><div class="amtextTitle">ENERGIA</div><p>Nel mio unico percorso lavorativo, ho avuto occasione di ricoprire uoli diversi che mi hanno conferito anche delle responsabilità. Per questo motivo, la carriera lavorativa è molto importante. Voglio diventare indipendente e una persona di riferimento nel lavoro.<br>Amo stare in contatto con le persone per poterne trarne insegnamenti e i lati migliori. Amo anche i lavori di squadra, con un team professionale che sia attento alla collaborazione e al rispetto, personale e lavorativo..</p></div>
+        <div class="amtext"><div class="amtextTitle">CURIOSITÀ</div><p>Sono una persona curiosa. Mi piace informarmi quando ho un dubbio o non so qualcosa e mi piace essere certa delle cose che dico, per questo, prima di dare un'informazione, mi assicuro di dire le cose giuste. <br>Ognuno di noi ha una storia da raccontare, fatta di esperienze e io amo sentire la gente parlare di loro e sentire la loro storia.</p></div>
+        <div class="amtext"><div class="amtextTitle">EQUILIBRIO</div><p>Nel mio tempo libero mi piace imparare cose nuove e godermi i momenti di silenzio. <br>Mi piace stare con amici, leggere libri sulla mitologia greca, scrivere e fare le parole crociate. Ultimamente dedico molto tempo allo studio. Dopo aver perso il lavoro, ho deciso di ricominciare a studiare e raggiungere gli obiettivi che mi sono fissata.</p></div>
+    </div>
+</div>
+<svg class="norotate" viewBox="0 0 500 70"id="formazioneLink">
+    <path d="M 0 30 C 150 100 280 0 500 40 L 500 0 L 0 0" fill="#bcdae0"></path>
+</svg>
+<div class="sectionFormazione">
+    <div class="formazioneTitle">
+        <img src="assets\Formazione-removebg-preview.png" alt="Sezione sulle esperienze formative">
+    </div>
+    <div class="formazioneText">
+        
+        <div class="ftext">
+            <div class="ftextTitle"><a href="https://talent.start2impact.it/profile/sofia-iotti#pills-certificate">Digital Marketing- Start2Impact University</a></div>
+            <p>2023- In corso<br>
+            Ho intrapreso il mio percorso di studi con il Master in Digital Marketing, scoprendo strada facendo un interesse 	particolare per lo Sviluppo Web. Con Start2Impact prima studio la teoria, poi metto in pratica quello che ho imparato con il 	supporto di professionisti del settore. Il loro feedback mi aiuta a capire cosa ho fatto bene e cosa, invece, posso migliorare 	con un po' di pratica.<br><br>
+            Ho superato gli esami di:<br> 
+            <span id="spanfText">HTML & CSS<br>
+                JAVASCRIPT BASICS<br>
+                SEO<br>
+                ANALISI STRATEGICA<br>
+                FUNNEL MARKETING<br>
+                SOCIAL MEDIA<br>
+                COPYWRITING</span>
+            </p>
+        </div>
+        <div class="ftext">
+            <div class="ftextTitle">Certificato di Lingua Inglese livello C1 Language First</div>
+                <p>Sostenuto a gennaio 2022 a termine di un percorso di circa un anno in una scuola di lingua a Reggio Emilia.</p>
+            <div class="ftextTitle">Corso Modellista dell'Abbigliamento - ForModena</div>
+                <p>Tra il 2018 e il 2019 ho seguito un corso a Carpi(MO) per modelliste, imparando le tecniche di confezione dei capi e realizzazione di modelli manualmente e tramite CAD. Ho approfondito alcuni argomenti inerenti al sistema moda e tecnicismi sui tessuti. Il corso si è concretizzato in uno stage di tre mesi per il brand Gaudì.</p>
+            <div class="ftextTitle">Diploma di Liceo Linguistico - Liceo Aldo Moro (RE)</div>
+                <p>Durante gli anni del liceo (2012-2017) ho studiato Inglese, Spagnolo e Tedesco.</p>        
+        </div>
+    </div>
+</div>
+<svg class="rotate" viewBox="0 0 500 70" id="esperienzeLink">
+    <path d="M 0 30 C 150 100 280 0 500 40 L 500 0 L 0 0" fill="#bcdae0"></path>
+</svg>
+<div  class="sectionEsperienze" >
+    <div class="esperienzeTitle">
+        <img src="assets\Esperienze-removebg-preview.png" alt="Sezione sulle esperienze lavorative">
+    </div>
+    <div class="esperienzeText">
+        <div class="etext">
+            <div class="etextTitle">Comunicazione Interna e<br>Servizi Generali<br>Polo Digitale Srl | Ottobre 2021 - Presente</div>
+                <p>Partendo dai Servizi Generali, da un anno affianco
+                    il team Marketing del brand nei progetti riguardanti la
+                    comunicazione e l'organizzazione eventi.<br><br>
+                    
+                    Nel tempo mi sono occupata di molteplici attività:<br>
+                    Comunicazione interna<br>
+                    Gestione e creazione contenuti per la Intranet aziendale<br>
+                    Scrittura articoli sito e newsletter<br>
+                    Supporto nell'organizzazione eventi aziendale<br>
+                    Creazione report<br>
+                    Stesura PED<br>
+                    Profilazione lead<br></p>
+        </div>
+        <div class="etext">
+            <div class="etextTitle">Addetta al confezionamento<br>di articoli tessili<br>Frog.Pro | Luglio 2019 - Settembre 2021</div>
+                <p>Questo ruolo mi ha permesso di sviluppare buone doti
+                    organizzative, di gestione del lavoro e problem solving.<br>
+                    Il mio ruolo prevedeva anche l'affiancamento e la
+                    formazione delle nuove risorse durante il processo di realizzazione dei prodotti e la
+                    stesura dei processi produttivi utilizzati.</p>
+        </div>
+    </div>
+</div>
+<svg class="norotate" viewBox="0 0 500 70" id="galleryLink">
+    <path d="M 0 30 C 150 100 280 0 500 40 L 500 0 L 0 0" fill="#bcdae0"></path>
+</svg>
+<div  class="sectionGallery">
+    <div class="galleryTitle">
+        <img src="assets\Gallery-removebg-preview.png" alt="Gallery con certificati e attestati di Sofia Iotti"></div>
+    <div class="galleryText">
+        <img src="assets\HTML_e_CSS_Certificato.png">
+        <img src="assets\1686845571474.jpg">
+        <img src="assets\ingleseC1parlato.png">
+        <img src="assets\ingleseC1scritto.png">
+        <img src="assets\SEO_Certificato.png">
+        <img src="assets\Analisi strategica.png">
+        <img src="assets\Copywriting_Certificato.png">
+        <img src="assets\Social_Media_Certificato.png">
+        <img src="assets\buffa.png">
+    </div>
+</div>
+<svg class="rotate" viewBox="0 0 500 70">
+    <path d="M 0 30 C 150 100 280 0 500 40 L 500 0 L 0 0" fill="#bcdae0"></path>
+</svg>
+</div>
+</body>
+</html>
